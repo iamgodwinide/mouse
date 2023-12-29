@@ -4,6 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>M0u$3</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <img src="site (1).png" usemap="#image-map" />
+
+    <map name="image-map">
+      <area
+        target=""
+        alt="twitter"
+        title="twitter"
+        href="#"
+        coords="135,119,306,322"
+        shape="rect"
+      />
+      <area
+        target=""
+        alt="link2"
+        title="link2"
+        href="#"
+        coords="125,360,306,488"
+        shape="rect"
+      />
+      <area
+        target=""
+        alt="link3"
+        title="link3"
+        href="#"
+        coords="118,533,282,673"
+        shape="rect"
+      />
+    </map>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+  </body>
 </html>
